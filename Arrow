@@ -1,0 +1,33 @@
+<html>
+<body>
+<script>  
+var logStuff = (arg1, arg2, ...moreArgs) => {
+ 
+// Logs arg1
+console.log(arg1);
+document.write(arg1);
+document.write('<br>')
+ 
+// Logs arg2
+console.log(arg2);
+document.write(arg2);
+document.write('<br>');
+ 
+// Logs an array of any other arguments you pass in after arg2
+console.log(moreArgs);
+document.write(moreArgs);
+document.write('<br>');
+ 
+};
+ 
+// In this example...
+arg1 = 'Mango'
+arg2 = 'Apple'
+moreArgs = ['chiku', 'banana', 'pineapple', 'delicious']
+logStuff('Mango', 'Apple','chiku', 'banana', 'pineapple', 'delicious');
+ 
+document.write(logStuff(arg1,arg2, ...moreArgs))
+ 
+</script> 
+</body>
+</html>
